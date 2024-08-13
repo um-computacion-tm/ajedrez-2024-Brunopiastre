@@ -6,8 +6,8 @@ class Board:
             col = []
             for _ in range(8):
                 col.append(None)  # O el valor que desees para cada posición
-          #  self.positions.append [0] [0] = Rook Black 
-           # self.positions.append [7] [7] = Rook white 
+              self.positions.append [0] [0] = Rook Black 
+           self.positions.append [7] [7] = Rook white 
             
             
         self.positions[0][0] = Rook('black')
