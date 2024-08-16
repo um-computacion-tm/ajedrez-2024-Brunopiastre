@@ -1,5 +1,5 @@
 import unittest
-from game.main import suma
+from main import suma
 
 class TestSuma(unittest.TestCase):
 
