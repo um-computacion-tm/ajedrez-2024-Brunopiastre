@@ -1,5 +1,11 @@
 # Changelog
 
+## 17/08/2024
+- Added function to validate movement of pieces & it tests
+- Eliminated cli.py file
+- Quited every file of the folders, Fix that in the future
+
+
 ## 13/08/2024
 
 - Requirements added

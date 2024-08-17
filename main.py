@@ -1,3 +1,5 @@
+from board import Board
+
 class Main:
     def main(self):
         while True:
