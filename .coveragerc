@@ -1,17 +1,19 @@
 [run]
-source = main
+source =
+    game
+    test
 omit =
     venv/*
-    */test/*
+    */test*
     */__init__.py
 [report]
 exclude_lines =
     pragma: no cover
-    def __repr__
     def setUp
     def test_
     return raw_input
     print
-    if __name__ == "__main__":
+    if __name__ == '__main__':
     def suite
     __str__
+    main()
