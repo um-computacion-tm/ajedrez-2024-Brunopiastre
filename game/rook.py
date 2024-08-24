@@ -4,9 +4,9 @@ class Rook(Piece):
     def __init__(self, color, position):
         super().__init__(color, position)
 
-#     def movimientos_validos(self, board):
-#         movimientos = []
-#         x, y = self.position
+    def movimientos_validos(self, board):
+        movimientos = []
+        x, y = self.position
     
 #         # Movimientos verticales hacia arriba
 #         for i in range(x - 1, -1, -1):

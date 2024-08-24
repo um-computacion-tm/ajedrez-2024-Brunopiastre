@@ -10,10 +10,11 @@ class Board:
         self.__positions__ = [[None for _ in range(8)] for _ in range(8)]
         
         # Ponemos las torres en las esquinas
-        self.__positions__[0][0] = Rook("BLACK")
-        self.__positions__[0][7] = Rook("BLACK")
-        self.__positions__[7][0] = Rook("WHITE")
-        self.__positions__[7][7] = Rook("WHITE")
+        self.__positions__[0][0] = Rook("BLACK", (0, 0))
+        self.__positions__[0][7] = Rook("BLACK", (0, 7))
+        self.__positions__[7][0] = Rook("WHITE", (7, 0))
+        self.__positions__[7][7] = Rook("WHITE", (7, 7))
+        
         
         # Colocar los peones negros
         for i in range(8):
