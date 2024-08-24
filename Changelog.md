@@ -1,5 +1,14 @@
 # Changelog
 
+## 18/08/2024
+
+-main comented
+-Rook comented
+-Queen constructor
+-King constructor
+-Knight constructor
+-bishop constructor
+
 ## 17/08/2024
 -Added kings & queen positions to the board and tests for every piece actually exiting in board
 

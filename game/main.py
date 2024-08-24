@@ -1,10 +1,10 @@
-from board import Board
+from game.board import Board
 
 class Main:
     def main(self):
         while True:
             print("--Ajedrez--")
-            print("1. Seleccionar color de sus piezas")
+            print("1. Seleccione el color de sus piezas")
             print("2. Iniciar nueva partida")
             print("3. Salir")
             
