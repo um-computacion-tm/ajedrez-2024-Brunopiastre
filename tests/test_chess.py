@@ -5,6 +5,9 @@ from game.board import Board
 from game.piece import Piece
 
 class TestChess(unittest.TestCase):
+    
+    def test_init(self):
+        self.assertEqual(1, 1)
 
     # @patch('chess.Board.get_piece', return_value=None)
     # @patch('builtins.print')
