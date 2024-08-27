@@ -8,13 +8,12 @@ jobs:
       - image: cimg/python:3.10.1
     steps:
       - checkout
-      - run:
+      - run: 
           name: Setup Code Climate test-reporter
           command: |
-              # download test reporter as a static binary
-              curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-              chmod +x ./cc-test-reporter
-              ./cc-test-reporter before-build
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
+            ./cc-test-reporter before-build
       - run:
           name: Install dependencies
           command: pip install -r requirements.txt
@@ -22,6 +21,5 @@ jobs:
           name: Running Tests
           command: coverage run -m unittest && coverage xml && coverage report -m
       - run:
-          name: Update CodeClimate coverage report
-          command: |
-              ./cc-test-reporter after-build
+          name: Upload Code Climate coverage report
+          command: ./cc-test-reporter after-build 
