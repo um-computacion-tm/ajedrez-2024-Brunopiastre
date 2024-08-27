@@ -6,15 +6,17 @@ from game.knight import Knight
 from game.bishop import Bishop
 
 class Board:
-    def __init__(self, positions=None):
-        self.__positions__ = [[None for _ in range(8)] for _ in range(8)]
-        
-        # Ponemos las torres en las esquinas
-        self.__positions__[0][0] = Rook("BLACK", (0, 0))
-        self.__positions__[0][7] = Rook("BLACK", (0, 7))
-        self.__positions__[7][0] = Rook("WHITE", (7, 0))
-        self.__positions__[7][7] = Rook("WHITE", (7, 7))
-        
+    def __init__(self):
+        self.__positions__ = []
+        for _ in range(8):
+            col = []
+            for _ in range(8):
+                col.append(None)
+            self.__positions__.append(col)
+        self.__positions__[0][0] = Rook("BLACK") # Black
+        self.__positions__[0][7] = Rook("BLACK") # Black
+        self.__positions__[7][7] = Rook("WHITE") # White
+        self.__positions__[7][0] = Rook("WHITE") # White
         
         # Colocar los peones negros
         for i in range(8):
@@ -44,5 +46,11 @@ class Board:
         self.__positions__[7][2] = Bishop("WHITE")
         self.__positions__[7][5] = Bishop("WHITE")
         
+        
     def get_piece(self, row, col):
-        return self.__positions__[row][col]
+        piece = self.__positions__[row][col]
+        if piece is None:
+            return None
+        return piece.color
+    
+board=Board()

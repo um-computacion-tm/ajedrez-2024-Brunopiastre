@@ -1,7 +1,6 @@
 class Piece:
-    def __init__(self, color, position):
+    def __init__(self, color):
         self.color = color
-        self.position = position
 
     def movimientos_validos(self, board):
         raise NotImplementedError("Este método debe ser implementado por las subclases")
