@@ -1,5 +1,7 @@
 # Changelog
 
+## 01/09/2024
+- Show Board method added to board
 ## 30/08/2024
 
 - Move method was not implemented at this time, but it will be added in the future.

@@ -1,11 +1,12 @@
-import unittest
-from unittest.mock import patch
-from game.main import Main
+# import unittest
+# from unittest.mock import patch
+# from game.main import *
 
-class TestMain(unittest.TestCase):
-    def test(self):
-        pass
+# class TestMain(unittest.TestCase):
+#     @patch('builtins.input', side_effect=['1', '3'])
+ 
+    
     
 
-if __name__ == '__main__':
-    unittest.main()
+# if __name__ == '__main__':
+#     unittest.main()
